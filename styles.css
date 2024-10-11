@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#cartas {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+}
+
+.carta {
+    width: 100px;
+    height: 150px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+    border: 2px solid #333;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.carta:hover {
+    transform: scale(1.1);
+}
+
+.carta i {
+    color: transparent;
+}
+
+.carta.virada i {
+    color: #333;
+}
+
+#notificacao {
+    margin-top: 20px;
+    color: red;
+}
